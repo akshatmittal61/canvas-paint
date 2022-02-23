@@ -1,5 +1,7 @@
 # Paint
 
+![Paint by Akshat Mittal](./images/favicon.png)
+
 A simple HTML canvas application.
 
 ## Features
