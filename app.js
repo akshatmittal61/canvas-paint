@@ -57,3 +57,9 @@ function clear_canvas_width() {
 	s.width = 10;
 	s.width = w;
 }
+var saveButton = document.getElementById("download");
+let canvas = document.getElementById("mainCanvas");
+saveButton.addEventListener("click", function (e) {
+	var dataURL = canvas.toDataURL("image/png");
+	saveButton.href = dataURL;
+});

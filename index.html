@@ -1,45 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Paint Application</title>
-</head>
-<body>
-    <h2>Simple Paint Application <img src="https://cdn1.iconfinder.com/data/icons/fatcow/32/painbrush.png" alt="" class="paint"></h2>
-    <canvas	width="1000" height="350" id="mainCanvas"></canvas>
-    <div class="controls">
-        <ul>
-            <li class="red selected"></li>
-            <li class="blue"></li>
-            <li class="yellow"></li>
-        </ul>
-        <button id="clear" onclick='clear_canvas_width ()'>Clear Canvas</button>
-        <button id="revealColorSelect">New Colour</button>
-        <div id="colorSelect">
-            <span id="newColor"></span>
-            <div class="sliders">
-                <p>
-                    <label for="red">Red</label>
-                    <input id="red" name="red" type="range" min=0 max=255 value=0>
-                </p>
-                <p>
-                    <label for="green">Green</label>
-                    <input id="green" name="green" type="range" min=0 max=255 value=0>
-                </p>
-                <p>
-                    <label for="blue">Blue</label>
-                    <input id="blue" name="blue" type="range" min=0 max=255 value=0>
-                </p>
-            </div>
-            <div>
-                <button id="addNewColor">Add Colour</button>
-            </div>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="app.js" type="text/javascript" charset="utf-8"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Paint Application</title>
+	</head>
+	<body>
+		<h2>
+			Simple Paint Application
+			<img
+				src="https://cdn1.iconfinder.com/data/icons/fatcow/32/painbrush.png"
+				alt=""
+				class="paint"
+			/>
+		</h2>
+		<canvas width="1000" height="350" id="mainCanvas"></canvas>
+		<div class="controls">
+			<ul>
+				<li class="red selected"></li>
+				<li class="blue"></li>
+				<li class="yellow"></li>
+			</ul>
+			<div class="controls-buttons">
+				<button id="clear" onclick="clear_canvas_width ()">
+					Clear Canvas
+				</button>
+				<button>
+					<a href="#" id="download" download="my-file-name.png">
+						Save Canvas
+					</a>
+				</button>
+			</div>
+			<button id="revealColorSelect">New Colour</button>
+			<div id="colorSelect">
+				<span id="newColor"></span>
+				<div class="sliders">
+					<p>
+						<label for="red">Red</label>
+						<input
+							id="red"
+							name="red"
+							type="range"
+							min="0"
+							max="255"
+							value="0"
+						/>
+					</p>
+					<p>
+						<label for="green">Green</label>
+						<input
+							id="green"
+							name="green"
+							type="range"
+							min="0"
+							max="255"
+							value="0"
+						/>
+					</p>
+					<p>
+						<label for="blue">Blue</label>
+						<input
+							id="blue"
+							name="blue"
+							type="range"
+							min="0"
+							max="255"
+							value="0"
+						/>
+					</p>
+				</div>
+				<button id="addNewColor">Add Colour</button>
+			</div>
+		</div>
+		<script
+			src="https://code.jquery.com/jquery-1.11.0.min.js"
+			type="text/javascript"
+			charset="utf-8"
+		></script>
+		<script src="app.js" type="text/javascript" charset="utf-8"></script>
+	</body>
 </html>
