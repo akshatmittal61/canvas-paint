@@ -1,6 +1,8 @@
 # Paint
 
-![Paint by Akshat Mittal](./images/favicon.png)
+<p align="center">
+<img src="./images/favicon.png" width="128" />
+</p>
 
 A simple HTML canvas application.
 
